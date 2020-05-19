@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<PASOEConfigDetails version="12.2">
+    <webapp>DevOpsApp</webapp>
+    <servers>
+        <server>PAS122</server>
+    </servers>
+</PASOEConfigDetails>

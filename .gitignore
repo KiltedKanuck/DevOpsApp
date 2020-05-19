@@ -1,5 +1,7 @@
 .gradle
 /build/
+/rcode/
+/*.r
 
 # Ignore Gradle GUI config
 gradle-app.setting

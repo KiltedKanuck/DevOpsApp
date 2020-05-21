@@ -1,0 +1,18 @@
+<?xml version="1.0" ?>
+<testsuites errors="0" failures="2" name="ABLUnit" tests="2"><testsuite classname="com.progress.devops.TestFiles" errors="0" failures="2" id="1" name="D:\workspace122\DevOpsApp\src\test\abl\com\progress\devops\TestFiles.cls" skipped="0" tests="2" time="0"><properties><property name="proversion" value="12.2.0.0.1170"/><property name="process-architecture" value="64"/><property name="opsys" value="WIN32"/><property name="window-system" value="TTY"/><property name="cpinternal" value="ISO8859-1"/><property name="startup-parameters" value="-pf d:\OE122\OpenEdge\startup.pf,-cpinternal ISO8859-1,-cpstream ISO8859-1,-cpcoll Basic,-cpcase Basic,-d mdy,-numsep 44,-numdec 46,(end .pf),-db Test2020,-H localhost,-S 10150,-nosplash,-p D:\OE122\OpenEdge\oeide\eclipse\plugins\com.openedge.pdt.debug.core_12.2.0.00\abl\_debuglauncher.p"/></properties><testcase classname="com.progress.devops.TestFiles" name="TestHelloExists" status="Failure" time=".001"><failure message="argument cannot be unknown" type="OpenEdge.Core.AssertionFailedError">NotNull OpenEdge.Core.Assert at line 219  (OpenEdge/Core/Assert.r)
+NotNull OpenEdge.Core.Assert at line 223  (OpenEdge/Core/Assert.r)
+TestHelloExists com.progress.devops.TestFiles at line 19  (D:\workspace122\DevOpsApp\src\test\abl\com\progress\devops\TestFiles.cls)
+InvokeTestMethod OpenEdge.ABLUnit.Model.TestClass at line 65  (OpenEdge/ABLUnit/Model/TestClass.r)
+RunChild OpenEdge.ABLUnit.Model.TestCase at line 109  (OpenEdge/ABLUnit/Model/TestCase.r)
+runtests OpenEdge.ABLUnit.Runner.ABLRunner at line 1042  (OpenEdge/ABLUnit/Runner/ABLRunner.r)
+runtests OpenEdge.ABLUnit.Runner.ABLRunner at line 1049  (OpenEdge/ABLUnit/Runner/ABLRunner.r)
+RunTests OpenEdge.ABLUnit.Runner.ABLRunner at line 149  (OpenEdge/ABLUnit/Runner/ABLRunner.r)
+ABLUnitCore.r at line 79  (ABLUnitCore.r)</failure></testcase><testcase classname="com.progress.devops.TestFiles" name="TestCustomerExists" status="Failure" time=".001"><failure message="argument cannot be unknown" type="OpenEdge.Core.AssertionFailedError">NotNull OpenEdge.Core.Assert at line 219  (OpenEdge/Core/Assert.r)
+NotNull OpenEdge.Core.Assert at line 223  (OpenEdge/Core/Assert.r)
+TestCustomerExists com.progress.devops.TestFiles at line 27  (D:\workspace122\DevOpsApp\src\test\abl\com\progress\devops\TestFiles.cls)
+InvokeTestMethod OpenEdge.ABLUnit.Model.TestClass at line 65  (OpenEdge/ABLUnit/Model/TestClass.r)
+RunChild OpenEdge.ABLUnit.Model.TestCase at line 109  (OpenEdge/ABLUnit/Model/TestCase.r)
+runtests OpenEdge.ABLUnit.Runner.ABLRunner at line 1042  (OpenEdge/ABLUnit/Runner/ABLRunner.r)
+runtests OpenEdge.ABLUnit.Runner.ABLRunner at line 1049  (OpenEdge/ABLUnit/Runner/ABLRunner.r)
+RunTests OpenEdge.ABLUnit.Runner.ABLRunner at line 149  (OpenEdge/ABLUnit/Runner/ABLRunner.r)
+ABLUnitCore.r at line 79  (ABLUnitCore.r)</failure></testcase></testsuite></testsuites>

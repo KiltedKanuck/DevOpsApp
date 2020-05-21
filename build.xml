@@ -76,7 +76,7 @@
         description="compile the source">
     <!-- Compile the OpenEdge class code from ${src} into ${build} -->
         <PCTCompile destDir="${dir.rcode}" dlcHome="${dlc}" forceCompile="true">
-            <fileset dir="${dir.src}" casesensitive="yes">
+            <fileset dir="${dir.openedge}" casesensitive="yes">
                 <include name="**/*.cls"/>
                 <include name="**/*.p"/>
                 <include name="**/*.w"/>

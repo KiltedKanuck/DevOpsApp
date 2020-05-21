@@ -1,0 +1,9 @@
+{
+    "workingDirectory": "${workspaceFolder}",
+    "proPath": [
+        "${workspaceFolder}",
+        "${workspaceFolder}/main/openedge"
+    ],
+    "dlc": "D:/DLC122/OpenEdge", 
+    "proPathMode": "append" 
+}

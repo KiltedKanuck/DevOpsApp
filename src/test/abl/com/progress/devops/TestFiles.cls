@@ -16,7 +16,7 @@ class com.progress.devops.TestFiles:
     @Test.
     method public void TestHelloExists(  ):  
         // make sure the code exists
-        Assert:NotNull(search("com\progress\devops\hello.r")).
+        Assert:NotNull(search("com/progress/devops/hello.r")).
         return.
  
     end method.
@@ -24,7 +24,7 @@ class com.progress.devops.TestFiles:
     @Test.
     method public void TestCustomerExists(  ):  
         // make sure this exisits
-        Assert:NotNull(search("com\progress\devops\customer.r")).
+        Assert:NotNull(search("com/progress/devops/customer.r")).
         return.
  
     end method.

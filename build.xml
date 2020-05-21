@@ -63,6 +63,7 @@
             description="pre-build the source">
         <!-- Pre-build activities that need to happen before the compile of the classes-->
         <mkdir dir="${dir.build}"/>
+        <mkdir dir="${dir.webapps}"/>
         <!-- lets setup the MANIFEST now-->
         <manifest file="${dir.conf}/MANIFEST.MF" mode="replace">
           <attribute name="ABL-Application-Name"    value="${Project.Name}"/>
@@ -149,24 +150,33 @@
             basedir="${dir.src}"
             destdir="${dir.dist}">
 
-            <bin dir="${dir.bin}" /> 
             <tlr dir="${dir.tlr}" />
             <conf dir="${dir.conf}" />
             <openedge dir="${dir.rcode}" includes="**/*.r,*.gen,*.map" />
-            <webapps dir="${dir.dist}" />
+            <webapps dir="${dir.webapps}" />
 
         </ABLApp>
     </target>
 
     <target name="packageWebApp" depends="test">
+        <!-- DevOpsApp-->
         <ABLWebAppPackage 
             dlc="${dlc}" 
             webAppName="${Project.Name}" 
             verbose="false" 
-			isIncremental="true" 
+			isIncremental="false" 
             services="CustomerSVC,HelloSVC"
             srcdir="${basedir}" 
-            destdir="${dir.dist}" />
+            destdir="${dir.webapps}" />
+        <!-- ROOT-->
+        <ABLWebAppPackage 
+            dlc="${dlc}" 
+            webAppName="ROOT" 
+            verbose="false" 
+			isIncremental="false" 
+            srcdir="${basedir}" 
+            destdir="${dir.webapps}" />
+    
     </target>
 
 </project>

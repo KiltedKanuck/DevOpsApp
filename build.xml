@@ -95,7 +95,7 @@
             <!-- Create the distribution directory -->
         <mkdir dir="${dir.dist}"/>
         <!-- Lets create the r-code artifact -->
-        <PCTLibrary destfile="${dir.dist}/${Project.Name}-${Project.Status}-${Project.Version}.pl" 
+        <PCTLibrary destfile="${dir.dist}/${Project.Name}-${Project.Version}-${Project.Classifier}.pl" 
                     dlcHome="${dlc}">
             <fileset dir="${dir.rcode}">
                 <include name="**/*.r" />
@@ -104,7 +104,7 @@
             </fileset>
         </PCTLibrary>
         <!-- Lets create the source code artifact now-->
-        <PCTLibrary destfile="${dir.dist}/${Project.Name}-SRC-${Project.Status}-${Project.Version}.pl" 
+        <PCTLibrary destfile="${dir.dist}/${Project.Name}-SRC-${Project.Version}-${Project.Classifier}.pl" 
                     dlcHome="${dlc}">
             <fileset dir="${dir.src}">
                 <include name="**/*.cls" />
@@ -129,7 +129,7 @@
             </fileset>
 			<propath>
                 <pathelement path="${dir.test}"/>
-                <pathelement location="${dir.dist}/${Project.Name}-${Project.Status}-${Project.Version}.pl" />
+                <pathelement location="${dir.dist}/${Project.Name}-${Project.Version}-${Project.Classifier}.pl" />
 			</propath>
 		</ABLUnit>   
     </target>

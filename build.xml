@@ -57,13 +57,16 @@
         <echo message="${full}" />
         <PCTVersion />
         <echo>JAVA VERSION=${ant.java.version}</echo>
+        <record name="build.log" loglevel="verbose" append="false"/>
     </target>
 
     <target name="build" depends="init"
             description="pre-build the source">
         <!-- Pre-build activities that need to happen before the compile of the classes-->
         <mkdir dir="${dir.build}"/>
+        <mkdir dir="${dir.build}/empty"/>
         <mkdir dir="${dir.webapps}"/>
+        
         <!-- lets setup the MANIFEST now-->
         <manifest file="${dir.conf}/MANIFEST.MF" mode="replace">
           <attribute name="ABL-Application-Name"    value="${Project.Name}"/>
@@ -149,7 +152,7 @@
             archiveBaseName="${Project.Name}"
             archiveVersion="${Project.Version}"
             archiveClassifier="${Project.Classifier}"
-            basedir="${dir.src}"
+            basedir="${dir.build}/empty"
             destdir="${dir.dist}">
 
             <tlr dir="${dir.tlr}" />

@@ -1,5 +1,5 @@
 Manifest-Version: 1.0
-Ant-Version: Apache Ant 1.10.6
+Ant-Version: Apache Ant 1.10.7
 Created-By: 11.0.7+10 (AdoptOpenJDK)
 ABL-Application-Name: DevOpsApp
 ABL-Application-Version: 12.2.0

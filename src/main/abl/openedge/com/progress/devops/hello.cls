@@ -38,7 +38,7 @@ class com.progress.devops.hello inherits WebHandler:
         /* This body object can be a string or something else (JsonObject for instance) */               
         assign 
             oBody = new OpenEdge.Core.String(
-                           substitute( 'Hello &1', kName)
+                           substitute( 'Hello &1, how are you doing?', kName)
                            + '~r~n':u   /*CRLF */
                            + 'This message was returned by HandleGet in Hello.cls ...'
                            ).
